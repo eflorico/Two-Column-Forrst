@@ -1,0 +1,20 @@
+{
+	"name": "Two-column Forrst",
+	"version": "1.0",
+	"description": "Two-columnifying Forrst.",
+	"content_scripts": [
+		{
+			"matches": [ 
+				"http://forrst.com/posts/*",
+				"http://forrst.com/",
+				"http://forrst.com/activity/*",
+				"http://forrst.com/people/*/posts*",
+				"http://forrst.com/people/*/likes*",
+				"http://forrst.com/settings"
+			],
+			"css": [ "style.css" ],
+			"js": [ "jquery.js", "action.js" ],
+			"run_at": "document_start"
+		}
+	]
+}
